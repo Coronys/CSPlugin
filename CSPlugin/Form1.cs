@@ -17,10 +17,6 @@ namespace CSPlugin
             InitializeComponent();
         }
 
-        private void axETS_IPC_EX1_Enter(object sender, EventArgs e)
-        {
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             axETS_IPC_EX1.IpcCreateServer ("172.29.64.1@");

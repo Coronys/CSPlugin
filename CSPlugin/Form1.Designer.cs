@@ -55,7 +55,6 @@ namespace CSPlugin
             this.axETS_IPC_EX1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axETS_IPC_EX1.OcxState")));
             this.axETS_IPC_EX1.Size = new System.Drawing.Size(100, 50);
             this.axETS_IPC_EX1.TabIndex = 0;
-            this.axETS_IPC_EX1.Enter += new System.EventHandler(this.axETS_IPC_EX1_Enter);
             // 
             // label1
             // 
