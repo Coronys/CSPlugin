@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net;
 
 namespace CSPlugin
 {
@@ -19,10 +20,14 @@ namespace CSPlugin
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            axETS_IPC_EX1.IpcCreateServer ("172.29.64.1@");
+            string hostName = Dns.GetHostName(); // Retrive the Name of HOST  
+            // Get the IP  
+            string myIP = Dns.GetHostByName(hostName).AddressList[0].ToString();
+
+            axETS_IPC_EX1.IpcCreateServer (myIP + "@");
             textBox1.Text = axETS_IPC_EX1.IpcGetServerName();
             textBox4.Text = "TMMessage 111, `From cs`";
-            textBox5.Text = "172.29.64.1";
+            textBox5.Text = myIP;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
