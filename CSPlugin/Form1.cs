@@ -48,7 +48,7 @@ namespace CSPlugin
                 case 1:
                     break;
                 case 2:
-                    // From ETS called as AskMailslotMessage, in this case we have 
+                    // Called From ETS as AskMailslotMessage, in this case we have 
                     // to return value put some message into ETS runtime log
                     axETS_IPC_EX1.IpcReplyToServer(32,"TMMessage 101, `This is a message 1 to index 2`");
                     axETS_IPC_EX1.IpcReplyToServer(32,"TMMessage 102, `This is a message 1 to index 2`");
