@@ -22,7 +22,8 @@ namespace CSPlugin
         {
             string hostName = Dns.GetHostName(); // Retrive the Name of HOST  
             // Get the IP  
-            string myIP = Dns.GetHostByName(hostName).AddressList[0].ToString();
+            //string myIP = Dns.GetHostByName(hostName).AddressList[0].ToString();
+            string myIP = Dns.GetHostEntry(hostName).AddressList[1].MapToIPv4().ToString ();
 
             axETS_IPC_EX1.IpcCreateServer (myIP + "@");
             textBox1.Text = axETS_IPC_EX1.IpcGetServerName();
