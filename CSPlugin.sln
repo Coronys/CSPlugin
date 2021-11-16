@@ -1,26 +1,59 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31613.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSPlugin", "CSPlugin\CSPlugin.csproj", "{C7552E84-DF3F-4592-80AC-068D3D31749F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSPluginTests", "CSPluginTests\CSPluginTests.csproj", "{C4E3C697-1F54-4D8E-B925-D52C6621E741}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSPluginTests1", "CSPluginTests1\CSPluginTests1.csproj", "{86C25591-6BFD-44C4-8F31-CE6F1E3B725E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		ccDbg|Any CPU = ccDbg|Any CPU
+		ccDbg|x86 = ccDbg|x86
 		Debug|Any CPU = Debug|Any CPU
 		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C7552E84-DF3F-4592-80AC-068D3D31749F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C7552E84-DF3F-4592-80AC-068D3D31749F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7552E84-DF3F-4592-80AC-068D3D31749F}.ccDbg|Any CPU.ActiveCfg = ccDbg|Any CPU
+		{C7552E84-DF3F-4592-80AC-068D3D31749F}.ccDbg|Any CPU.Build.0 = ccDbg|Any CPU
+		{C7552E84-DF3F-4592-80AC-068D3D31749F}.ccDbg|x86.ActiveCfg = ccDbg|x86
+		{C7552E84-DF3F-4592-80AC-068D3D31749F}.ccDbg|x86.Build.0 = ccDbg|x86
+		{C7552E84-DF3F-4592-80AC-068D3D31749F}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{C7552E84-DF3F-4592-80AC-068D3D31749F}.Debug|Any CPU.Build.0 = Debug|x86
 		{C7552E84-DF3F-4592-80AC-068D3D31749F}.Debug|x86.ActiveCfg = Debug|x86
 		{C7552E84-DF3F-4592-80AC-068D3D31749F}.Debug|x86.Build.0 = Debug|x86
 		{C7552E84-DF3F-4592-80AC-068D3D31749F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7552E84-DF3F-4592-80AC-068D3D31749F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C7552E84-DF3F-4592-80AC-068D3D31749F}.Release|x86.ActiveCfg = Release|x86
 		{C7552E84-DF3F-4592-80AC-068D3D31749F}.Release|x86.Build.0 = Release|x86
+		{C4E3C697-1F54-4D8E-B925-D52C6621E741}.ccDbg|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4E3C697-1F54-4D8E-B925-D52C6621E741}.ccDbg|Any CPU.Build.0 = Debug|Any CPU
+		{C4E3C697-1F54-4D8E-B925-D52C6621E741}.ccDbg|x86.ActiveCfg = Debug|Any CPU
+		{C4E3C697-1F54-4D8E-B925-D52C6621E741}.ccDbg|x86.Build.0 = Debug|Any CPU
+		{C4E3C697-1F54-4D8E-B925-D52C6621E741}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4E3C697-1F54-4D8E-B925-D52C6621E741}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4E3C697-1F54-4D8E-B925-D52C6621E741}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C4E3C697-1F54-4D8E-B925-D52C6621E741}.Debug|x86.Build.0 = Debug|Any CPU
+		{C4E3C697-1F54-4D8E-B925-D52C6621E741}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4E3C697-1F54-4D8E-B925-D52C6621E741}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4E3C697-1F54-4D8E-B925-D52C6621E741}.Release|x86.ActiveCfg = Release|Any CPU
+		{C4E3C697-1F54-4D8E-B925-D52C6621E741}.Release|x86.Build.0 = Release|Any CPU
+		{86C25591-6BFD-44C4-8F31-CE6F1E3B725E}.ccDbg|Any CPU.ActiveCfg = Debug|Any CPU
+		{86C25591-6BFD-44C4-8F31-CE6F1E3B725E}.ccDbg|Any CPU.Build.0 = Debug|Any CPU
+		{86C25591-6BFD-44C4-8F31-CE6F1E3B725E}.ccDbg|x86.ActiveCfg = Debug|Any CPU
+		{86C25591-6BFD-44C4-8F31-CE6F1E3B725E}.ccDbg|x86.Build.0 = Debug|Any CPU
+		{86C25591-6BFD-44C4-8F31-CE6F1E3B725E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86C25591-6BFD-44C4-8F31-CE6F1E3B725E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86C25591-6BFD-44C4-8F31-CE6F1E3B725E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{86C25591-6BFD-44C4-8F31-CE6F1E3B725E}.Debug|x86.Build.0 = Debug|Any CPU
+		{86C25591-6BFD-44C4-8F31-CE6F1E3B725E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86C25591-6BFD-44C4-8F31-CE6F1E3B725E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86C25591-6BFD-44C4-8F31-CE6F1E3B725E}.Release|x86.ActiveCfg = Release|Any CPU
+		{86C25591-6BFD-44C4-8F31-CE6F1E3B725E}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -50,7 +50,7 @@ namespace CSPlugin
             // axETS_IPC_EX1
             // 
             this.axETS_IPC_EX1.Enabled = true;
-            this.axETS_IPC_EX1.Location = new System.Drawing.Point(302, 19);
+            this.axETS_IPC_EX1.Location = new System.Drawing.Point(65, 294);
             this.axETS_IPC_EX1.Name = "axETS_IPC_EX1";
             this.axETS_IPC_EX1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axETS_IPC_EX1.OcxState")));
             this.axETS_IPC_EX1.Size = new System.Drawing.Size(100, 50);
@@ -156,7 +156,7 @@ namespace CSPlugin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(298, 387);
+            this.ClientSize = new System.Drawing.Size(309, 343);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
