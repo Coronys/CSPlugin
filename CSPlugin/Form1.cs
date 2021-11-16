@@ -23,12 +23,22 @@ namespace CSPlugin
             string hostName = Dns.GetHostName(); // Retrive the Name of HOST  
             // Get the IP  
             //string myIP = Dns.GetHostByName(hostName).AddressList[0].ToString();
-            string myIP = Dns.GetHostEntry(hostName).AddressList[1].MapToIPv4().ToString ();
 
-            axETS_IPC_EX1.IpcCreateServer (myIP + "@");
-            textBox1.Text = axETS_IPC_EX1.IpcGetServerName();
+            string myIP = Dns.GetHostEntry(hostName).AddressList[1].MapToIPv4().ToString ();
             textBox4.Text = "TMMessage 111, `From cs`";
             textBox5.Text = myIP;
+
+            int items = Dns.GetHostEntry(hostName).AddressList.Count();
+            for (int i=0; i<items; ++i)
+            {
+                string ip = Dns.GetHostEntry(hostName).AddressList[i].ToString();
+                comboBox1.Items.Add(ip);
+            }
+            comboBox1.SelectedIndex = 0;
+
+            axETS_IPC_EX1.IpcCreateServer (textBox5.Text + "@");
+            textBox1.Text = axETS_IPC_EX1.IpcGetServerName();
+            
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -66,6 +76,19 @@ namespace CSPlugin
         private void button1_Click(object sender, EventArgs e)
         {
             axETS_IPC_EX1.IpcSendMessage(textBox5.Text + "@30000", 32, textBox4.Text);
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            textBox5.Text = comboBox1.GetItemText(comboBox1.SelectedItem);
+            RecreateServer();
+        }
+
+        private void RecreateServer()
+        {
+            axETS_IPC_EX1.IpcReleaseServer();
+            axETS_IPC_EX1.IpcCreateServer(textBox5.Text + "@");
+            textBox1.Text = axETS_IPC_EX1.IpcGetServerName();
         }
     }
 }
